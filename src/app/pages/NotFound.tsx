@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 export function NotFoundPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
@@ -7,12 +9,12 @@ export function NotFoundPage() {
         <p className="text-gray-600 mb-8">
           Sorry, we couldn't find the page you're looking for.
         </p>
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-block bg-[#0F4C5C] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#16697A] transition-colors"
         >
           Go Back Home
-        </a>
+        </Link>
       </div>
     </div>
   );

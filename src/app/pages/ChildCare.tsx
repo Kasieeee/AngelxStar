@@ -126,7 +126,7 @@ export function ChildCarePage() {
                   <ArrowRight className="ml-2" size={20} />
                 </a>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+447404911446"
                   className="bg-white text-[#0F4C5C] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center border-2 border-[#0F4C5C]"
                 >
                   Contact Our Consultants
@@ -332,7 +332,7 @@ export function ChildCarePage() {
                 <Phone className="text-[#0F4C5C]" size={24} />
               </div>
               <h3 className="font-semibold text-[#0F4C5C] mb-2">Phone</h3>
-              <p className="text-gray-600">+44 7495 324648</p>
+              <p className="text-gray-600">+447404911446</p>
               <p className="text-sm text-gray-500 mt-1">Mon-Fri: 09:00 AM - 06:00 PM</p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
@@ -348,8 +348,8 @@ export function ChildCarePage() {
                 <MapPin className="text-[#0F4C5C]" size={24} />
               </div>
               <h3 className="font-semibold text-[#0F4C5C] mb-2">Office</h3>
-              <p className="text-gray-600">Oakridge Business Centre,</p>
-              <p className="text-sm text-gray-500 mt-1">Weston Road, Stafford, ST16 3RS</p>
+              <p className="text-gray-600">Unit 1, The Courtyard, 17 Bond Street,</p>
+              <p className="text-sm text-gray-500 mt-1">Nuneaton, Warwickshire, England, CV11 4BX</p>
             </div>
           </div>
 

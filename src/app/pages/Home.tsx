@@ -99,7 +99,7 @@ export function HomePage() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
-                  src="/hero-image.jpeg"
+                  src={import.meta.env.BASE_URL + "hero-image.jpeg"}
                   alt="Compassionate elderly care"
                   className="w-full h-full object-cover"
                 />
@@ -133,7 +133,7 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#0F4C5C] mb-4">
-              Our Care Services
+              Our Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive care solutions tailored to meet the unique needs of each individual and family
@@ -230,7 +230,7 @@ export function HomePage() {
             Our Mission
           </h2>
           <p className="text-xl text-[#0F4C5C] mb-8 max-w-2xl mx-auto">
-            At Angel and Star Care Services, we have a clear mission of uplifting high standards and being the best at what we do, with a committed team to provide peace of mind to our clients and their families.
+            At Angel & Star Care Services, we have a clear mission of uplifting high standards and being the best at what we do, with a committed team to provide peace of mind to our clients and their families.
           </p>
           <Link
             to="/about"
@@ -292,10 +292,10 @@ export function HomePage() {
               <ArrowRight className="ml-2" size={20} />
             </Link>
             <a
-              href="tel:+447495324648"
+              href="tel:02475263024"
               className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0F4C5C] transition-colors"
             >
-              Call 07495 324648
+              Call 02475263024
             </a>
           </div>
         </div>

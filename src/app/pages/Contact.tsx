@@ -70,9 +70,9 @@ export function ContactPage() {
               <div className="w-14 h-14 bg-[#FFBD31] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="text-[#0F4C5C]" size={24} />
               </div>
-              <h3 className="font-semibold text-[#0F4C5C] mb-2">Phone</h3>
-              <p className="text-gray-600">+44 7495 324648</p>
-              <p className="text-sm text-gray-500 mt-1">Mon-Fri: 09:00 AM - 06:00 PM</p>
+              <h3 className="font-semibold text-lg text-[#0F4C5C] mb-1">Phone Number</h3>
+              <p className="text-gray-600">02475263024</p>
+              <p className="text-sm text-gray-500 mt-1">Mon-Fri: 09:00  - 18:00 </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-md text-center">
               <div className="w-14 h-14 bg-[#FFBD31] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -87,8 +87,8 @@ export function ContactPage() {
                 <MapPin className="text-[#0F4C5C]" size={24} />
               </div>
               <h3 className="font-semibold text-[#0F4C5C] mb-2">Office</h3>
-              <p className="text-gray-600">Oakridge Business Centre,</p>
-              <p className="text-sm text-gray-500 mt-1">Weston Road, Stafford, ST16 3RS</p>
+              <p className="text-gray-600">Unit 1, The Courtyard, 17 Bond Street,</p>
+              <p className="text-sm text-gray-500 mt-1">Nuneaton, Warwickshire, England, CV11 4BX</p>
             </div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export function ContactPage() {
 
               {/* Service Selection */}
               <div className="space-y-2">
-                <Label htmlFor="serviceType">Type of Care Needed *</Label>
+                <Label htmlFor="serviceType">Type of Service Needed *</Label>
                 <Select
                   value={formData.serviceType}
                   onValueChange={(value) =>
@@ -180,12 +180,10 @@ export function ContactPage() {
                     <SelectValue placeholder="Select a service type" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="dementia-care">Dementia Care</SelectItem>
-                    <SelectItem value="in-home-care">In Home Care</SelectItem>
+                    <SelectItem value="in-home-care">In-Home Care</SelectItem>
                     <SelectItem value="companionship">Companionship Support</SelectItem>
-                    <SelectItem value="sleeping-in">Sleeping in Care</SelectItem>
                     <SelectItem value="live-in">Live-In Care</SelectItem>
-                    <SelectItem value="other">Other / Not Sure</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -239,7 +237,7 @@ export function ContactPage() {
                   Submit Enquiry
                 </Button>
                 <p className="text-center text-sm text-gray-500 mt-3">
-                  By submitting this form, you agree to be contacted by Angel and Star Care Services
+                  By submitting this form, you agree to be contacted by Angel & Star Care Services
                 </p>
               </div>
             </form>
@@ -264,7 +262,7 @@ export function ContactPage() {
                 We'll Contact You
               </h3>
               <p className="text-gray-600">
-                A member of our team will reach out within 24 hours to discuss your needs
+                A member of our team will reach out to you within 24 hours to discuss your needs.
               </p>
             </div>
             <div className="text-center">
@@ -275,7 +273,7 @@ export function ContactPage() {
                 Free Consultation
               </h3>
               <p className="text-gray-600">
-                We'll arrange a free consultation to assess needs and create a personalized care plan
+                We'll arrange a free consultation to assess needs and create a personalised care plan.
               </p>
             </div>
             <div className="text-center">
@@ -286,7 +284,7 @@ export function ContactPage() {
                 Start Care
               </h3>
               <p className="text-gray-600">
-                Once you're ready, we'll match you with the perfect caregiver and begin services
+                Once you're ready, we'll match you with the perfect caregiver and begin services.
               </p>
             </div>
           </div>
@@ -304,10 +302,10 @@ export function ContactPage() {
             Our support line is available 24/7 for urgent care needs
           </p>
           <a
-            href="tel:+447495324648"
-            className="inline-block bg-[#FFBD31] text-[#0F4C5C] px-8 py-4 rounded-lg font-semibold hover:bg-[#ffc94d] transition-colors"
+            href="tel:02475263024"
+            className="bg-[#FFBD31] text-[#0F4C5C] px-8 py-4 rounded-lg font-semibold hover:bg-[#ffc94d] transition-colors inline-block"
           >
-            Call Now: 07495 324648
+            Call Now: 02475263024
           </a>
         </div>
       </section>

@@ -6,7 +6,6 @@ import {
   TrendingUp,
   Award,
   Calendar,
-  DollarSign,
   GraduationCap,
   ArrowRight,
   Briefcase,
@@ -77,11 +76,6 @@ export function CareersPage() {
 
   const benefits = [
     {
-      icon: DollarSign,
-      title: 'Competitive Salary',
-      description: 'Industry-leading pay rates with performance bonuses and regular reviews',
-    },
-    {
       icon: Calendar,
       title: 'Flexible Scheduling',
       description: 'Choose shifts that work with your lifestyle and commitments',
@@ -90,11 +84,6 @@ export function CareersPage() {
       icon: GraduationCap,
       title: 'Training & Development',
       description: 'Ongoing professional development and certification opportunities',
-    },
-    {
-      icon: Heart,
-      title: 'Health Benefits',
-      description: 'Comprehensive health, dental, and vision insurance coverage',
     },
     {
       icon: TrendingUp,
@@ -144,13 +133,6 @@ export function CareersPage() {
                 Join a team of passionate healthcare professionals dedicated to providing exceptional care and improving lives. Build a rewarding career while making a meaningful impact.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="#open-positions"
-                  className="bg-[#FFBD31] text-[#0F4C5C] px-8 py-4 rounded-lg font-semibold hover:bg-[#ffc94d] transition-colors text-center inline-flex items-center justify-center"
-                >
-                  View Open Positions
-                  <ArrowRight className="ml-2" size={20} />
-                </a>
                 <Link
                   to="/contact"
                   className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0F4C5C] transition-colors text-center"
@@ -177,14 +159,14 @@ export function CareersPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-[#0F4C5C] mb-4">
-              Why Work at Angel and Star?
+              Why Work at Angel & Star Care Services?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We invest in our team members because we know that great care starts with great caregivers
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
@@ -255,11 +237,11 @@ export function CareersPage() {
             <div>
               <div className="text-[#FFBD31] text-6xl mb-4">"</div>
               <blockquote className="text-2xl text-gray-700 mb-6 leading-relaxed">
-                Working at Angel and Star Care Services has been incredibly rewarding. Every day I get to make a real difference in people's lives, and the support from my team makes it all worthwhile.
+                Working at Angel & Star Care Services has been incredibly rewarding. Every day I get to make a real difference in people's lives, and the support from my team makes it all worthwhile.
               </blockquote>
               <div>
-                <p className="font-semibold text-lg text-[#0F4C5C]">Maria Rodriguez, RN</p>
-                <p className="text-gray-600">Senior Care Nurse • 5 years with Angel and Star</p>
+                <p className="font-semibold text-lg text-[#0F4C5C]">Maria Rodriguez</p>
+                <p className="text-gray-600">Care Worker • 5 years with Angel & Star</p>
               </div>
             </div>
           </div>
@@ -353,11 +335,8 @@ export function CareersPage() {
                       <SelectValue placeholder="Select a position" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="registered-nurse">Registered Nurse (RN)</SelectItem>
-                      <SelectItem value="pediatric-nurse">Pediatric Nurse</SelectItem>
-                      <SelectItem value="personal-care-assistant">Personal Care Assistant</SelectItem>
-                      <SelectItem value="dementia-specialist">Dementia Care Specialist</SelectItem>
-                      <SelectItem value="child-care-provider">Child Care Provider</SelectItem>
+                      <SelectItem value="health-care-assistant">Health Care Assistant</SelectItem>
+                      <SelectItem value="team-leader">Team Leader</SelectItem>
                       <SelectItem value="care-coordinator">Care Coordinator</SelectItem>
                       <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
@@ -410,7 +389,7 @@ export function CareersPage() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="Share your experience, qualifications, and why you're interested in working with Angel and Star Care Services..."
+                  placeholder="Share your experience, qualifications, and why you're interested in working with Angel & Star Care Services..."
                   rows={5}
                   className="border-gray-300 resize-none"
                 />
@@ -473,7 +452,7 @@ export function CareersPage() {
                   Submit Application
                 </Button>
                 <p className="text-center text-sm text-gray-500 mt-3">
-                  By submitting this form, you agree to our privacy policy and consent to be contacted by Angel and Star Care Services
+                  By submitting this form, you agree to our privacy policy and consent to be contacted by Angel & Star Care Services
                 </p>
               </div>
             </form>
@@ -489,21 +468,21 @@ export function CareersPage() {
             Questions About Working With Us?
           </h2>
           <p className="text-xl text-gray-200 mb-8">
-            Our recruitment team is here to help answer any questions you have about careers at Angel and Star
+            Our recruitment team is here to help answer any questions you have about careers at Angel & Star
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:office@angelandstarcareservices.com"
+              href="mailto:recruitment@angelandstarcareservices.com"
               className="bg-[#FFBD31] text-[#0F4C5C] px-8 py-4 rounded-lg font-semibold hover:bg-[#ffc94d] transition-colors inline-flex items-center justify-center"
             >
               Email Careers Team
               <ArrowRight className="ml-2" size={20} />
             </a>
             <a
-              href="tel:+447495324648"
+              href="tel:02475263024"
               className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0F4C5C] transition-colors"
             >
-              Call 07495 324648
+              Call 02475263024
             </a>
           </div>
         </div>
