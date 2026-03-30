@@ -1,7 +1,10 @@
-import { Link } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 export function Footer() {
+  const location = useLocation();
+  const isChildrenServices = location.pathname.includes('/child-care');
+
   return (
     <footer className="bg-[#0F4C5C] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -63,11 +66,11 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <Phone size={16} className="mt-1 text-[#FFBD31] flex-shrink-0" />
-                <span className="text-gray-300">02475263024</span>
+                <span className="text-gray-300">{isChildrenServices ? "+447404911446" : "02475263024"}</span>
               </li>
               <li className="flex items-start space-x-2">
                 <Mail size={16} className="mt-1 text-[#FFBD31] flex-shrink-0" />
-                <span className="text-gray-300">office@angelandstarcareservices.com</span>
+                <span className="text-gray-300">{isChildrenServices ? "careers@angelandstarcareservices.com" : "office@angelandstarcareservices.com"}</span>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin size={16} className="mt-1 text-[#FFBD31] flex-shrink-0" />
